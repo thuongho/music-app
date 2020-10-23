@@ -5,7 +5,7 @@ const Chains = ({ name }) => {
 
   useEffect(() => {
     setTitle(title);
-  });
+  }, [title, name]);
 
   return (
     <div className='chains-container'>
